@@ -14,18 +14,11 @@ Description: |
 
 TestLink: |
       RequestType : Post
-      TestLink Url : URL
+      TestLinkUrL : URL
       
 TestParameters:
-    - name: gitHubPatToken
-      description: git hub pat token for repository
-      input_type: string
-      default: ""
-    - name: AzureContainerName
-      description: container name where image will be deployed
-      input_type: string
-      default: ""
-    - name: AzureAKSName
-      description: path to aks cluster 
-      input_type: string
-      default:  ""
+    - name: data
+      description: list of days
+      request_body_type: application/json
+      input_type: list
+      default: {"data":[ [25], [23], [10], [9], [3],[25], [23], [10], [9], [3] ] }
