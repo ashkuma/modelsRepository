@@ -1,0 +1,31 @@
+Type: pkl
+Compatibility: 3.x, 4.x, 5.x, 6.x
+Name: azdevopsdemo
+Version:0.1
+NotebookLink: http://localhost:8890/notebooks/Untitled.ipynb
+
+DataSet:
+- Path: Local
+  Type: CSV
+  input_type: Table
+  
+Description: |
+      Machine learning model for linear regression for monthly subscribers
+
+TestLink: |
+      RequestType : Post
+      TestLink Url : URL
+      
+TestParameters:
+    - name: gitHubPatToken
+      description: git hub pat token for repository
+      input_type: string
+      default: ""
+    - name: AzureContainerName
+      description: container name where image will be deployed
+      input_type: string
+      default: ""
+    - name: AzureAKSName
+      description: path to aks cluster 
+      input_type: string
+      default:  ""
